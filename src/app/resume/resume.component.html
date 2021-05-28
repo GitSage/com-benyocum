@@ -1,9 +1,9 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
-<div id="resume-iframe-container">
+<div id="resume-iframe-container" [style.display]="loading ? 'none' : 'block'">
+  <h3>This is an <span class="highlight">embedded Word document</span> hosted through Microsoft OneDrive.</h3>
   <iframe
     src="https://onedrive.live.com/embed?cid=69111B9E848BC4CA&resid=69111B9E848BC4CA%2125232&authkey=AI0lmwg9uYgbCvw&em=2"
     id="resume-iframe"
-    [style.display]="loading ? 'none' : 'block'"
     (load)="loading=false"
   ></iframe>
 </div>
