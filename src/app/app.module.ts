@@ -8,11 +8,13 @@ import { ResumeComponent } from './resume/resume.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResumeComponent
+    ResumeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
