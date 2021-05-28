@@ -14,7 +14,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: ResumeComponent
+    pathMatch: 'full',
+    redirectTo: 'about'
   }
 ];
 
