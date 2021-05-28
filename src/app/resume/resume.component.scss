@@ -1,15 +1,14 @@
 #resume-iframe {
   border: none;
   overflow: hidden;
-  width: 840px;
-  height: 100%;
+  width: 870px;
+  height: 870px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 
 #resume-iframe-container {
-  height: calc(100% - 150px);
-  padding:40px;
   display: flex;
   align-items: center;
 }
