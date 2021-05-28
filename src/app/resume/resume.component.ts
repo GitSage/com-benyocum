@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
+  loading: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
