@@ -17,6 +17,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from '@angular/material/snack-bar';
+import { BadTermsAndConditionsComponent } from './bad-ui/bad-terms-and-conditions/bad-terms-and-conditions.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from '@angular/mater
     ResumeComponent,
     AboutComponent,
     BadUiComponent,
-    BadCaptchaComponent
+    BadCaptchaComponent,
+    BadTermsAndConditionsComponent
   ],
   imports: [
     BrowserModule,
