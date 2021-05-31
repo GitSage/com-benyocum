@@ -1,0 +1,19 @@
+<p>To prove you are a human, please enable all these toggles.</p>
+
+<div id="toggles-container">
+  <mat-slide-toggle
+    [checked]="checked"
+    (click)="clickSlide($event, i)"
+    *ngFor="let checked of togglesCheckedValues; let i = index"
+  ></mat-slide-toggle>
+</div>
+
+<div id="submit-button-container">
+  <span
+    matTooltip="Not all toggles are checked. Are you sure you're not a robot?"
+    [matTooltipDisabled]="getNumCheckedToggles() === togglesCheckedValues.length">
+    <button mat-raised-button type="button" [disabled]="togglesCheckedValues.includes(false)" (click)="submit()">
+      Submit
+    </button>
+  </span>
+</div>
